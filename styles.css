@@ -1,4 +1,5 @@
 *, *::before, *::after {
+    box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif; 
     font-weight: normal;
 }
@@ -7,4 +8,11 @@ body {
         padding: 1; 
         margin: 1;
         background: linear-gradient(to right, #52748abb, #00ffa600);
+}
+
+.calculator {
+    background-color: aqua;
+    color: white;
+    border: 3px black;
+    padding: 30px;
 }
