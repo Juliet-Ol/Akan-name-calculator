@@ -10,7 +10,7 @@ body {
         background: linear-gradient(to right, #52748abb, #00ffa600);
 }
 
-.calculator-grid {
+.calculator-container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +23,7 @@ body {
     font-weight: normal;
     width: 100%;
 }
-.calculator-grid {
+.calculator-container {
     max-width: 30%;
-    max-height: 30%;
+    max-height: 100%;
 }
