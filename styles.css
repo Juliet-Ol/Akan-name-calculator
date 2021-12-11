@@ -27,3 +27,25 @@ body {
     max-width: 30%;
     max-height: 100%;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: 0;
+    color: grey;
+    border: 4px solid black;
+    padding: 30px;
+    font-size : large;
+    font-style: normal;
+    font-weight: normal;
+    width: 50%;
+    grid-row: inherit;
+}
+
+.table,th, td{
+    border: 2px solid black;
+    ruby-span: inherit;
+
+
+}
