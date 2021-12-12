@@ -45,7 +45,18 @@ body {
 
 .table,th, td{
     border: 2px solid black;
-    ruby-span: inherit;
+    padding: 30px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    width: 100%;
+    background-color: azure;
+    
+    
+        }
 
+.table,th{
+    font-weight: bolder;
+    font-size: larger;
+    width: 50%;
 
-}
+}        
