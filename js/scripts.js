@@ -1,29 +1,51 @@
-function check_akanname(day) {
-   var akanname = document.getElementById("year").value;
-   var akanname = document.getElementById("month").value; 
-   var akanname = document.getElementById("day").value; 
-   var akanname = document.getElementById("gender").value;
+function fillName() {
+    var name = document.getElementById("fillName").value;
+    if (name === ""){
+        alert("Name missing");
+        return false;
+    }
+}
+
+function fillYear () {
+    var year = document.getElementById("fillYear").value;
+    if (year === "0"){
+    alert("Year born missing");
+    return false;
+}
+
+function selectMonth () {
+    var month = document.getElementById("fillMonth").value;
+    if (month === "0")
+    alert("Month born missing");
+    return false;
+    }
+}
+
+function select () {
+    var day = document.getElementById("fillDay").value;
+    if (day === "0")
+    alert("Day born missing")
+    return false;
+}
+
+function selectGender() {
+    var gender = document.getElementById("fillDay").value;
+    if (gender === "")
+    alert("Gender missing")
+    return false;
 
 }
 
-function gender()
-var male = document.getElementById("male").check;
-var female = document.getElementById("female").check;
-if (male) {
-    console.log(male)
-}
-else if (female) {
-    console.log(female)
-}
 
 
-function getName() {
+
+function getAkanName() {
     var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"];
     var maleAkanNames = ["Kwasi", "kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     var femaleAkanNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     var year = parseInt(document.getElementById(yearBorn).value)
-    var month = parseInt(document.getElementById(montBorn))
-    var day = parseInt(document.getElementById(dayBorn))
+    var month = parseInt(document.getElementById(montBorn).value)
+    var day = parseInt(document.getElementById(dayBorn).value)
     var dayOfTheWeek = ( ( ((5*yy/4) ) + ((26*(mm+1)/10)) + dd )%7);
     var akanDay = days[day.toFixed()];
     var gender = parseInt(document.getElementById("gender").value);
