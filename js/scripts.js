@@ -13,13 +13,27 @@ function fillYear () {
     return false;
 }
 
+function validYear() {
+    var year = document.getElementById(yearOfBirth).value;
+    if(year == 1910 && ( year! )
+
+}   
+
 function selectMonth () {
     var month = document.getElementById("fillMonth").value;
-    if (month === "0")
+    if (month === "")
     alert("Month born missing");
     return false;
     }
 }
+
+function validMonth () {
+    if (monthBorn == 12 )
+    return true;
+    else if (monthBorn <1 || monthBorn >12)
+    return false;
+}
+
 
 function select () {
     var day = document.getElementById("fillDay").value;
@@ -27,6 +41,15 @@ function select () {
     alert("Day born missing")
     return false;
 }
+
+function validDay () {
+    if (dayBorn == 12 )
+    return true;
+    else if (dayBorn <1 || dayBorn >32)
+    return false;
+}
+
+
 
 function selectGender() {
     var gender = document.getElementById("fillDay").value;
@@ -36,7 +59,13 @@ function selectGender() {
 
 }
 
-
+function validGender () {
+    if (gender === "")
+    return false;
+    else if (gender == male || female )
+    return true;
+}
+    
 
 
 function getAkanName() {
@@ -44,13 +73,14 @@ function getAkanName() {
     var maleAkanNames = ["Kwasi", "kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     var femaleAkanNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     var year = parseInt(document.getElementById(yearBorn).value)
-    var month = parseInt(document.getElementById(montBorn).value)
+    var a = year % 4;
+    var month = parseInt(document.getElementById(monthBorn).value)
     var day = parseInt(document.getElementById(dayBorn).value)
     var dayOfTheWeek = ( ( ((5*yy/4) ) + ((26*(mm+1)/10)) + dd )%7);
+      
     var akanDay = days[day.toFixed()];
     var gender = parseInt(document.getElementById("gender").value);
-
-    if (gender == male) {
+      if (gender == male) {
         if (akanDay==="Sunday"){
             document.getElementById("output").value = "born on sunday: "+ akanMale[0];
             return true;
