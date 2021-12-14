@@ -11,12 +11,6 @@ body {
 }
 
 
-
-.calculator-container {
-    max-width: 100%;
-    max-height: 30%;
-}
-
 .container {
     display: block;
     align-items: center;
@@ -30,6 +24,7 @@ body {
     font-weight: normal;
     width: 50%;
     
+    
 }
 
 .table,th, td{
@@ -37,7 +32,8 @@ body {
     padding: 30px;
     border-collapse: collapse;
     border-radius: 10px;
-    width: 100%;
+    width: 5%;
+    height: 5%;
     background-color: azure;
     
     
@@ -61,8 +57,10 @@ body {
     font-size : large;
     font-style: normal;
     font-weight: normal;
-    width: 30%;
+    width: 40%;
+    height: 30%;
 }
+
 
 input[type=text]{
 width: 80%;
