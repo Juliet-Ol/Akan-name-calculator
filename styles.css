@@ -15,9 +15,8 @@ body {
 .calculator-container{
     display:flex;
     align-items: center;
-    justify-content: center;
-    
-    color: white;
+    justify-content: center;  
+    color: black;
     border: 4px solid black;
     padding: 30px;
     font-size : large;
@@ -25,6 +24,7 @@ body {
     font-weight: normal;
     width: 100%;
     height: 100%;
+   
 }    
     
 
@@ -49,7 +49,9 @@ button{
     font-size: 20px;
     border: none;
     border-radius: 10px;
-    font: bolder;
+    font: bolder; 
      
 
 }
+
+
