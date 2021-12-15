@@ -5,7 +5,7 @@ December 2021
 
 Description
 
-Akan name calculator is inspired by Ghana a country in West Africa where children are named depening on what day of the week they are born. They are the different set names for male and female for example a male child born on Friday is called Kofi and the female child is called Afua.
+Akan name calculator is inspired by Ghana a country in West Africa where children are named depending on what day of the week they are born. They are the different set names for male and female for example a male child born on Friday is called Kofi and the female child is called Afua.
 
 Features
 
