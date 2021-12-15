@@ -13,11 +13,7 @@ function fillYear () {
     return false;
 }
 
-function validYear() {
-    var year = document.getElementById(yearOfBirth).value;
-    if(year == 1910 && ( year! )
 
-}   
 
 function selectMonth () {
     var month = document.getElementById("fillMonth").value;
@@ -35,7 +31,7 @@ function validMonth () {
 }
 
 
-function select () {
+function selectDay () {
     var day = document.getElementById("fillDay").value;
     if (day === "0")
     alert("Day born missing")
@@ -43,7 +39,7 @@ function select () {
 }
 
 function validDay () {
-    if (dayBorn == 12 )
+    if (dayBorn == 31 )
     return true;
     else if (dayBorn <1 || dayBorn >32)
     return false;
@@ -52,7 +48,7 @@ function validDay () {
 
 
 function selectGender() {
-    var gender = document.getElementById("fillDay").value;
+    var gender = document.getElementById("fillGender").value;
     if (gender === "")
     alert("Gender missing")
     return false;
@@ -68,14 +64,14 @@ function validGender () {
     
 
 
-function getAkanName() {
+function getAkaname() {
     var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"];
     var maleAkanNames = ["Kwasi", "kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     var femaleAkanNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     var year = parseInt(document.getElementById(yearBorn).value)
-    var a = year % 4;
     var month = parseInt(document.getElementById(monthBorn).value)
     var day = parseInt(document.getElementById(dayBorn).value)
+    
     var dayOfTheWeek = ( ( ((5*yy/4) ) + ((26*(mm+1)/10)) + dd )%7);
       
     var akanDay = days[day.toFixed()];

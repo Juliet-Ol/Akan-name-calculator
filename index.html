@@ -3,75 +3,18 @@
     <head>
         <title>Akan-name-calculator</title>
         <link href="styles.css" rel="stylesheet" type="text/css">
-       <script scr="js/script.js"></script>
+       
 
     <body>
         <h1>Akan name calculator</h1>
         <p>Akan is a web application that uses your birthday to calculate the day of the week you were born.
         This application is inspired by Ghana a country in West Africa where they use days of the week to name a newborn. Children are given names depending on which day of the week they were born. They are the different set names for male and female.</p>
         <p>In Ghana the first name frequently corresponds to the day one was born and gender.</p>
-        <h2>Akan Name</h2>
-            <p>Akan name will appear as below showing the day one was born.</p>
-
-            
-            <div class="table">
-                <div class= container>
-                    <div class=tablewrap>
-                                     
-                <table>
-                <tr>
-                     <th>Day of the week</th>
-                    <th>Akan male name</th>
-                    <th>Akan female name</th>
-                    
-                </tr>
-                <tr>
-                    <td>Sunday</td>
-                    <td>Kwasi</td>
-                    <td>Akosua</td>
-
-                </tr>
-                <tr>
-                    <td>Monday</td>
-                    <td>Kwadwo</td>
-                    <td>Adwoa</td>
-                </tr>
-
-                <tr>
-                    <td>Tuesday</td>
-                    <td>Kwabena</td>
-                    <td>Abenaa</td>
-                </tr>
-
-                <tr>
-                    <td>Wednesday</td>
-                    <td>Kwaku</td>
-                    <td>Akua</td>
-                </tr>
-                <tr>
-                    <td>Thursday</td>
-                    <td>Yaw</td>
-                    <td>Yaa</td>
-                </tr>
-                <tr>
-                    <td>Friday</td>
-                    <td>Kofi</td>
-                    <td>Afua</td>
-                </tr>
-                <tr>
-                    <td>Saturday</td>
-                    <td>Kwame</td>
-                    <td>Ama</td>
-                </tr>
-                        
-
-                </table>
-                </div>  
-            </div>
-        </div>      
-            
-        <h3>  
-            <p>To know your Akan Name please fill in the form below and submit.</p>
+            <h2>Akan Name</h2>
+                <p>For example a male child born on sunday will be called Kwasi the female child will be called Akosua</p>
+                      
+                <h3>  
+                    <p>To know your Akan Name please fill in the form below and submit.</p>
                  
         <div class="calculator-form"> 
             <div class=calculator-container>
@@ -79,26 +22,21 @@
                 Akan Name Calculator
             
             <form id="calculator-form" action="/index.html" method="_post">
-                <label for="name">Akan name</label> 
-                    <input type="text" id="name" name="Akan name" placeholder="Akan name.."> <br>
-                
+                                
                 <label for="name">Name</label> 
                     <input type="text" id="name" name="Name" placeholder="Your name.."> <br>
-              
-                       
-            
-            Your date of Birth<br>
 
-            <label for="year">Year</label> 
-            <input type="number" id="year" name="year" placeholder="YY.."> <br>
+                <label for="year">Year</label> 
+                    <input type="number" id="year" name="year" placeholder="YY.."> <br>
+        
+                <label for="month">Month</label> 
+                    <input type="number" id="month" name="Month" placeholder="Month.."> <br>
+                        
+                        
+                <label for="dateOfBirth">Date of Birth</label> 
+                    <input type="date" id="day" name="Day" placeholder="day.."> <br>
 
-            <label for="month">Month</label> 
-            <input type="number" id="month" name="Month" placeholder="Month.."> <br>
-
-            <label for="name">Day</label> 
-                    <input type="number" id="day" name="Day" placeholder="day.."> <br>
-
-            <label for="gender">Gender</label> 
+                <label for="gender">Gender</label> 
                 <select name="gender" id="gender">
                     <option value="choose option">Gender</option>
                     <option value="male">Male</option>
@@ -112,7 +50,7 @@
             </div>                      
         </div>
         </h3>    
-
+        <script scr="js/script.js" type="text"></script>
     
     </body>
 </html>
